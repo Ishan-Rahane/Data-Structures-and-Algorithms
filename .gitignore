@@ -1,0 +1,80 @@
+ishanrahane@htadmin-Latitude-3420:~/testing$ git clone git@github.com:Ishan-Rahane/Java-8-Features.git
+Cloning into 'Java-8-Features'...
+warning: You appear to have cloned an empty repository.
+ishanrahane@htadmin-Latitude-3420:~/testing$ ls
+ Java-8-Features  'JAVA 8 Repository'   testing
+ishanrahane@htadmin-Latitude-3420:~/testing$ cd JAVA\ 8\ Repository/
+ishanrahane@htadmin-Latitude-3420:~/testing/JAVA 8 Repository$ ls
+Java_8_Udemy  out
+ishanrahane@htadmin-Latitude-3420:~/testing/JAVA 8 Repository$ cp -R Java_8_Udemy/
+cp: missing destination file operand after 'Java_8_Udemy/'
+Try 'cp --help' for more information.
+ishanrahane@htadmin-Latitude-3420:~/testing/JAVA 8 Repository$ cp -R Java_8_Udemy/ ../Java-8-Features/
+ishanrahane@htadmin-Latitude-3420:~/testing/JAVA 8 Repository$ ls
+Java_8_Udemy  out
+ishanrahane@htadmin-Latitude-3420:~/testing/JAVA 8 Repository$ cd ..
+ishanrahane@htadmin-Latitude-3420:~/testing$ ls
+ Java-8-Features  'JAVA 8 Repository'   testing
+ishanrahane@htadmin-Latitude-3420:~/testing$ cd J
+bash: cd: J: No such file or directory
+ishanrahane@htadmin-Latitude-3420:~/testing$ cd J
+Java-8-Features/   JAVA 8 Repository/ 
+ishanrahane@htadmin-Latitude-3420:~/testing$ cd J
+Java-8-Features/   JAVA 8 Repository/ 
+ishanrahane@htadmin-Latitude-3420:~/testing$ cd Java-8-Features/
+ishanrahane@htadmin-Latitude-3420:~/testing/Java-8-Features$ ls
+Java_8_Udemy
+ishanrahane@htadmin-Latitude-3420:~/testing/Java-8-Features$ git status 
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Java_8_Udemy/
+
+nothing added to commit but untracked files present (use "git add" to track)
+ishanrahane@htadmin-Latitude-3420:~/testing/Java-8-Features$ vim .gitignore
+ishanrahane@htadmin-Latitude-3420:~/testing/Java-8-Features$ git status 
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	Java_8_Udemy/
+
+nothing added to commit but untracked files present (use "git add" to track)
+ishanrahane@htadmin-Latitude-3420:~/testing/Java-8-Features$ git add .
+ishanrahane@htadmin-Latitude-3420:~/testing/Java-8-Features$ git commit -m "Java 8"
+[master (root-commit) 881e7eb] Java 8
+ 15 files changed, 547 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Java_8_Udemy/FunctionalProgramming/Exercise_Streams_Lambdas_Filter.java
+ create mode 100644 Java_8_Udemy/FunctionalProgramming/FunctionalProgramming_FunctionalApproach01.java
+ create mode 100644 Java_8_Udemy/FunctionalProgramming/FunctionalProgramming_StructuredApproach01.java
+ create mode 100644 Java_8_Udemy/FunctionalProgrammmingWithCustomClasses/CustomClass.java
+ create mode 100644 Java_8_Udemy/Main.java
+ create mode 100644 Java_8_Udemy/PlayingWithStreams/CollectingStreamElementsToList.java
+ create mode 100644 Java_8_Udemy/PlayingWithStreams/DistinctAndSorted.java
+ create mode 100644 Java_8_Udemy/PlayingWithStreams/MaxOfListUsingReduce.java
+ create mode 100644 Java_8_Udemy/PlayingWithStreams/SumOfListUsingReduce.java
+ create mode 100644 Java_8_Udemy/StringsExamples/FlatMapStrings.java
+ create mode 100644 Java_8_Udemy/StringsExamples/ModifyableStrings.java
+ create mode 100644 Java_8_Udemy/StringsExamples/PlayWithFiles.java
+ create mode 100644 Java_8_Udemy/StringsExamples/PlayingWithThreads.java
+ create mode 100644 Java_8_Udemy/StringsExamples/file.txt
+ishanrahane@htadmin-Latitude-3420:~/testing/Java-8-Features$ git push origin master
+Enumerating objects: 22, done.
+Counting objects: 100% (22/22), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (22/22), 7.14 KiB | 1.43 MiB/s, done.
+Total 22 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To github.com:Ishan-Rahane/Java-8-Features.git
+ * [new branch]      master -> master
+ishanrahane@htadmin-Latitude-3420:~/testing/Java-8-Features$ 
+
+
