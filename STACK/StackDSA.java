@@ -41,6 +41,9 @@ public class StackDSA {
             for (int i = 0; i < top; i++) {
                 System.out.println(arr[i] + ", ");
             }
+//            for (int i = top; i >= 0; i--) {
+//                System.out.println(arr[i] + ", ");
+//            }
         }
     }
 
