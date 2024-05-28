@@ -1,4 +1,4 @@
-package STACK;
+package ARRAYS.STACK;
 
 public class StackDSA {
 
